@@ -188,7 +188,7 @@
     }
 
     .dataset-info {
-      max-width: 800px;
+      max-width: 1200px;
       margin: 0 auto 40px;
       text-align: left;
     }
@@ -197,6 +197,7 @@
       font-size: 2rem;
       color: #333;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     .dataset-features {
@@ -253,16 +254,16 @@
     }
 
     .device-section h3 {
-      font-size: 1.8rem;
+      font-size: 2.0rem;
       color: #333;
       margin-bottom: 30px;
     }
 
     .device-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       gap: 30px;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 0 auto;
     }
 
@@ -278,23 +279,11 @@
     }
 
     .device-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
+      width: 60%;
+      height: auto;
+      object-fit: contain;
       border-radius: 8px;
       margin-bottom: 15px;
-    }
-
-    .device-card img[alt="Meta Quest 3"] {
-      height: 180px;
-      object-fit: contain;
-      padding: 10px;
-    }
-
-    .device-card img[alt="iPhone Pro"] {
-      height: 200px;
-      object-fit: contain;
-      padding: 10px;
     }
 
     .device-card h4 {
@@ -728,42 +717,49 @@
         <h3>Nature-1k: The Raw Beauty of Nature in 4K at 60FPS</h3>
         
 
-        <div style="font-family: Arial, sans-serif; font-size: 18px; line-height: 1.8; max-width: 1200px; background-color: #f9f9ff; padding: 30px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
-          <ul style="padding-left: 25px; color: #333;">
-            <li style="margin-bottom: 12px;">
-              <strong style="color:#e67e22;">1,000 five-second 4K UHD at 60fps videos:</strong>
-              <span style="color:#555;">High-quality video dataset covers real-world nature scenes.</span>
-            </li>
-            <li style="margin-bottom: 12px;">
-              <strong style="color:#e67e22;">Temporal consistency:</strong>
-              <span style="color:#555;">Nature-1k avoids scene cuts within the sequences.</span>
-            </li>
-            <li style="margin-bottom: 12px;">
-              Captures a diverse range of environments, lighting conditions, textures, and motion patterns.
-            </li>
-            <li style="margin-bottom: 12px;">
-              Nature-1k includes a compressed version to support rapid prototyping and lightweight testing.
-            </li>
-            <li style="margin-bottom: 12px;">
-              Released under an open-access license to support reproducibility and benchmarking.
-            </li>
-            <li style="margin-bottom: 12px;">
-              Enables research in multiple domains, including:
-              <ul style="margin-top: 5px; padding-left: 20px; color:#444;">
-                <li style="margin-bottom: 6px;">Generative AI for video</li>
-                <li style="margin-bottom: 6px;">Video super-resolution</li>
-                <li style="margin-bottom: 6px;">Video enhancement</li>
-                <li style="margin-bottom: 6px;">Video frame interpolation</li>
-                <li style="margin-bottom: 6px;">Neural network-based video encoding</li>
-                <li style="margin-bottom: 6px;">Content-aware video encoding</li>
-                <li style="margin-bottom: 6px;">Adaptive video streaming optimization</li>
-              </ul>
-            </li>
-            
-          </ul>
-        </div>
+          <!-- Dataset Overview Section -->
+          <div style="font-family: Arial, sans-serif; font-size: 18px; line-height: 1.8; max-width: 1200px; background-color: #f9f9ff; padding: 30px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); margin-bottom: 40px;">
+            <ul style="padding-left: 25px; color: #333;">
+              <li style="margin-bottom: 12px;">
+                <strong style="color:#e67e22;">1,000 professionally captured videos:</strong>
+                <span style="color:#555;">5-second clips in <strong>4K UHD at 60 fps</strong>, showcasing real-world natural scenes with high visual quality.</span>
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong style="color:#e67e22;">Temporal consistency:</strong>
+                <span style="color:#555;">No scene cuts within sequences, ideal for generative and temporal learning tasks.</span>
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong style="color:#e67e22;">Diverse real-world content:</strong>
+                <span style="color:#555;">Includes varied environments, lighting conditions, textures, and motion patterns.</span>
+              </li>
 
-          
+              <li style="list-style-type: none; margin-bottom: 12px;">&nbsp;</li>
+
+              <li style="margin-bottom: 12px;">
+                <strong style="color:#e67e22;">Two versions available:</strong>
+                <ul style="margin-top: 5px; padding-left: 20px; color:#444;">
+                  <li style="margin-bottom: 6px;">High-quality references for research and evaluation</li>
+                  <li style="margin-bottom: 6px;">Compressed versions for rapid prototyping and lightweight testing</li>
+                </ul>
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong style="color:#e67e22;">Open-access license:</strong>
+                <span style="color:#555;">Supports reproducibility and benchmarking in academic research.</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Applications Section -->
+          <div style="font-family: Arial, sans-serif; font-size: 18px; line-height: 1.8; max-width: 1200px; background-color: #f9f9ff; padding: 30px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); margin-bottom: 40px;">
+            <h4 style="color: #2c3e50;">🧠 Research Applications Enabled by Nature-1k</h4>
+            <ul style="list-style-type: circle; padding-left: 25px; color: #444;">
+              <li style="margin-left: 20px; margin-bottom: 6px;">Generative AI for video (inpainting, synthesis, etc.)</li>
+              <li style="margin-left: 20px; margin-bottom: 6px;">Video super-resolution and enhancement</li>
+              <li style="margin-left: 20px; margin-bottom: 6px;">Video frame interpolation and prediction</li>
+              <li style="margin-left: 20px; margin-bottom: 6px;">Neural network-based and content-aware video encoding</li>
+              <li style="margin-left: 20px; margin-bottom: 6px;">Adaptive video streaming and bitrate optimization</li>
+            </ul>
+          </div>
+         
       </div>
       <div class="download-options">
         <a href="https://ftp.itec.aau.at/datasets/Nature-1k/" target="_blank" style="
@@ -788,53 +784,86 @@
 
       <div class="devices-container">
         <div class="device-section">
-          <h3>Recording Devices</h3>
+          <h3>Recording Device</h3>
           <div class="device-grid">
             <div class="device-card">
               <img src="asset/canon_R7.png" alt="Canon R7 + RF-S 18-150mm F3.5-6.3 IS STM Lens" class="device-image">
               <h4>Canon R7 + RF-S 18-150mm F3.5-6.3 IS STM Lens</h4>
-              <p>The recording device for 4K60 video capture</p>
+              <p>The main recording device for 4K60 video capture</p>
             </div>
-
           </div>
         </div>
+          <div style="font-family: Arial, sans-serif; max-width: 1200px; margin-top: 40px; text-align: left;">
+          <h3 style="font-size: 2rem; color: #2c3e50; margin-bottom: 10px; text-align: center;">Citation</h3>
+            <p style="font-size: 18px; color: #333; margin-bottom: 10px;"><strong>BibTeX Citation:</strong></p>
 
-        <div style="font-family: Arial, sans-serif; max-width: 900px; margin-top: 40px; text-align: left;">
-          <p style="font-size: 18px; color: #333; margin-bottom: 10px;"><strong>BibTeX Citation:</strong></p>
-          <pre style="
-            background-color: #f4f4f4;
-            border-left: 4px solid #007BFF;
-            padding: 16px;
-            font-size: 15px;
-            font-family: 'Courier New', Courier, monospace;
-            color: #333;
-            overflow-x: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            text-align: left;
-            white-space: pre-wrap;
-          "><code>@inproceedings{ghasempour2025nature1k,
-          title={Nature-1k: The Raw Beauty of Nature in 4K at 60FPS},
-          author={Ghasempour, Mohammad and Amirpour, Hadi and Timmerer, Christian},
-          booktitle={ACM International Conference on Multimedia (ACM MM)},
-          year={2025},
-          note={Submitted}
-        }</code></pre>
-        </div>       
-        
+            <div style="position: relative;">
+              <pre id="bibtex" style="
+                background-color: #f4f4f4;
+                border-left: 4px solid #007BFF;
+                padding: 16px;
+                font-size: 15px;
+                font-family: 'Courier New', Courier, monospace;
+                color: #333;
+                overflow-x: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+                text-align: left;
+                white-space: pre-wrap;
+                margin: 0;
+              "><code>@inproceedings{ghasempour2025nature1k,
+            title     = {{Nature-1k}: {The} {Raw} {Beauty} of {Nature} in {4K} at {60FPS}},
+            author    = {Ghasempour, Mohammad and Amirpour, Hadi and Timmerer, Christian},
+            booktitle = {Proceedings of the ACM Multimedia Conference (ACM MM)},
+            year      = {2025}
+            note      = {Submitted}
+          }</code></pre>
+
+          <button onclick="copyBibtex()" 
+            style="position: absolute; top: 12px; right: 12px; background-color: #007BFF; color: white; border: none; padding: 6px 12px; font-size: 13px; border-radius: 6px; cursor: pointer; transition: background-color 0.3s;">
+            Copy BibTeX
+          </button>
+
+          <span id="copy-status" style="
+            position: absolute;
+            top: 18px;
+            right: 130px;
+            font-size: 13px;
+            color: green;
+            display: none;
+          ">Copied!</span>
+        </div>
+      </div>
   </section>
 
+
+  <script>
+    function copyBibtex() {
+      const text = document.getElementById("bibtex").innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const status = document.getElementById("copy-status");
+        status.style.display = "inline";
+        setTimeout(() => {
+          status.style.display = "none";
+        }, 2000);
+      });
+    }
+  </script>
+
   <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="section-content">
-      <h2>Contact</h2>
-      <p>Get in touch with us for any questions or collaborations.</p>
-      <div class="contact-info">
-        <p>Email: Mohammad.Ghasempour@aau.at</p>
+  <section id="contact" class="section" style="background-color: #f9f9ff; padding: 60px 20px;">
+    <div class="section-content" style="max-width: 800px; margin: 0 auto; text-align: center; font-family: Arial, sans-serif;">
+      <h2 style="font-size: 32px; color: #2c3e50; margin-bottom: 15px;">Contact</h2>
+      <p style="font-size: 18px; color: #555; margin-bottom: 25px;">
+        Have questions, feedback, or interested in collaboration? We'd love to hear from you.
+      </p>
+      <div class="contact-info" style="font-size: 18px; background-color: #fff; padding: 20px; border-left: 4px solid #007BFF; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: inline-block;">
+        <strong>Email:</strong> <a href="mailto:Mohammad.Ghasempour@aau.at" style="color: #007BFF; text-decoration: none;">Mohammad.Ghasempour@aau.at</a>
       </div>
     </div>
   </section>
 
+  
   <script>
     window.addEventListener('scroll', function() {
       const nav = document.querySelector('nav');
